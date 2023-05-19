@@ -6,6 +6,15 @@ for(let i=0; i<row; i++){
     for(let j=0; j<col; j++){
         board[i].push(j+1)
     }
-    console.log(board[i])
 }
-
+for(let i=0; i<row; i++){
+    let boardRow = "";
+    for(let j=0; j<col; j++){
+        
+        boardRow += board[i][j] 
+        if(j != row - 1){
+            boardRow += " | "
+        }
+    }
+    console.log(boardRow);
+}
